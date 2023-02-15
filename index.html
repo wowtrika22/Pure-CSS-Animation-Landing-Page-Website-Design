@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Landing Page Design</title>
+    <link rel="stylesheet" href="style/main.css">
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="assists/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="open">
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <section>
+        <div class="header ">
+            <h2 class="logo">Your Logo</h2>
+            <i class="fa fa-bars" aria-hidden="true" onclick="menutoggle()"></i>
+            <ul id="navg" class="show">
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Our Work</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <i class="fa fa-times" aria-hidden="true" onclick="menutoggle()"></i>
+            </ul>
+        </div>
+        <div class="bannertext" id="banner-hidden" >
+            <h2>Think Creative</h2>
+            <h3>And Make Innovative Design</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque obcaecati laudantium, omnis ut porro cupiditate! Eveniet dolorem numquam sapiente aliquid, iusto obcaecati, laudantium tempore vitae dolor, qui quae accusamus quaerat?
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <img src="images/How to Take Apart a Lightbulb _ eHow_com.jpeg" alt="" class="bulb">
+        <div class="element1"></div>
+        <div class="element2"></div>
+    </section>
+    <script type="text/javascript">
+        function menutoggle(){
+            var element1=document.getElementById("navg");
+            element1.classList.toggle("show")
+            /*
+            var element2=document.getElementById("banner-hidden");
+            element2.classList.toggle("bannertext");
+            */
+        }
+    </script>
+</body>
+</html>
